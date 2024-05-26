@@ -140,6 +140,7 @@ Password', 'required|trim|matches[password1]');
     $email = $this->input->post('email', true);
     $data = [
     'nama' => htmlspecialchars($this->input->post('nama', true)),
+    'id' => htmlspecialchars($id),
     'email' => htmlspecialchars($email),
     'image' => 'default.jpg',
     'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),

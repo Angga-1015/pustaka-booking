@@ -43,11 +43,6 @@ base_url('autentifikasi/lupaPassword'); ?>">Lupa Password?</a>
  <a class="small" href="<?=
 base_url('autentifikasi/registrasi'); ?>">Daftar Member!</a>
  </div>
- </div>
- </div>
- </div>
- </div>
- </div>
- </div>
+
  </div>
 </div>
