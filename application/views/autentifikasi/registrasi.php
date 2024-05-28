@@ -23,7 +23,7 @@ class="text-danger pl-3">', '</small>'); ?>
                          <div class="form-group"> 
                              <input type="text" class="form
 control form-control-user" id="id" name="id" placeholder="Nim" value="<?= set_value('id'); ?>"> 
-                             <?= form_error('nama', '<small 
+                             <?= form_error('id', '<small 
 class="text-danger pl-3">', '</small>'); ?> 
                          </div>  
                          <div class="form-group"> 
