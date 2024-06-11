@@ -20,10 +20,9 @@ class ModelBuku extends CI_Model
  {
  $this->db->insert('buku',$data);
  }
- public function updateBuku($data = null, $where = null)
- {
- $this->db->update('buku', $data, $where);
- }
+ public function updateBuku($data = null, $where = null) {
+    $this->db->update('buku', $data, $where);
+}
  public function hapusBuku($where = null)
  {
  $this->db->delete('buku', $where);
@@ -59,14 +58,14 @@ class ModelBuku extends CI_Model
  {
  $this->db->update('kategori', $data, $where);
  }
- //join
- public function joinKategoriBuku($where)
- {
- $this->db->select('buku.id_kategori,kategori.kategori');
- $this->db->from('buku');
- $this->db->join('kategori','kategori.id = 
-buku.id_kategori');
- $this->db->where($where);
- return $this->db->get();
- }
+  //join 
+  public function joinKategoriBuku($where)
+  { 
+    $this->db->select('buku.id_kategori,kategori.kategori'); 
+    $this->db->from('buku'); 
+    $this->db->join('kategori','kategori.id = 
+buku.id_kategori'); 
+    $this->db->where($where); 
+    return $this->db->get(); 
+}
 }
